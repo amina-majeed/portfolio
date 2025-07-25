@@ -9,31 +9,55 @@ import project3 from '@/assets/project-3.jpg';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard. Built with React, Node.js, and PostgreSQL.",
+      title: "Electronic Health Record (EHR) System",
+      description: "Developed a full-featured EHR system enabling secure, real-time access to patient data including medical history, prescriptions, lab results, and imaging. Implemented role-based access control, audit trails, and data encryption to ensure HIPAA compliance.",
       image: project1,
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+      technologies: ["ASP.NET Core", "C#", "MS SQL", "HL7", "FHIR"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and progress tracking.",
+      title: "Online Learning Management System",
+      description: "Developed a comprehensive web-based platform for managing online courses, student enrollments, and assessments. Integrated real-time chat and video streaming features.",
       image: project2,
-      technologies: ["Vue.js", "Firebase", "TypeScript", "PWA"],
+      technologies: ["ASP.NET Core", "JavaScript", "MS SQL", "SignalR"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true
+    },
+    {
+      title: "E-commerce Platform Development",
+      description: "Built and deployed a scalable e-commerce website using ASP.NET Core, incorporating secure payment gateways, product catalogs, and order management.",
+      image: project3,
+      technologies: ["ASP.NET Core", "C#", "MS SQL", "Payment Gateway"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
-      title: "Analytics Dashboard",
-      description: "A data visualization dashboard for business analytics with interactive charts, real-time data, and comprehensive reporting.",
-      image: project3,
-      technologies: ["React", "D3.js", "Python", "FastAPI", "MongoDB"],
+      title: "Inventory Management System",
+      description: "Designed and developed a desktop application to track inventory levels, manage supplier information, and generate real-time inventory reports.",
+      technologies: ["C#", "Desktop Application", "MS SQL", "Reporting"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: false
+    },
+    {
+      title: "Faishon360.com",
+      description: "Fashion e-commerce platform with modern design and user experience.",
+      technologies: ["ASP.NET Core", "JavaScript", "CSS"],
+      liveUrl: "https://faishon360.com",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      title: "C-Hub Development Platform",
+      description: "Development and learning platform for programmers and tech enthusiasts.",
+      technologies: ["ASP.NET Core", "C#", "Web API"],
+      liveUrl: "https://c-hub.net/",
+      githubUrl: "#",
+      featured: false
     }
   ];
 

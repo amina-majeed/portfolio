@@ -5,22 +5,22 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Languages & Frameworks",
-      skills: ["C#", "ASP.NET Core", "HTML5", "CSS3", "JavaScript", "TypeScript", "jQuery", "Angular", "React"],
+      skills: ["C#", "ASP.NET Core", "HTML", "CSS", "JavaScript", "jQuery", "Angular", "React"],
       gradient: "bg-skill-gradient"
     },
     {
-      title: "Backend & Database",
-      skills: ["ASP.NET Core", "Web API", "Entity Framework", "Dapper", "MS SQL", "SQL Server", "MySQL"],
+      title: "Databases & Technologies",
+      skills: ["MS SQL", "Entity Framework", "MVC", "Web API", "Code First", "Model First", "Database First"],
       gradient: "bg-hero-gradient"
     },
     {
-      title: "Tools & Cloud",
-      skills: ["Visual Studio", "VS Code", "Git", "Azure", "AWS", "Docker", "Kubernetes", "Postman"],
+      title: "Tools & Platforms",
+      skills: ["Visual Studio", "Jira", "Git", "AI Productivity Tools"],
       gradient: "bg-text-gradient"
     },
     {
-      title: "Methodologies",
-      skills: ["Agile", "Scrum", "TDD", "DDD", "Clean Architecture", "MVC", "RESTful APIs"],
+      title: "Server Management",
+      skills: ["IONOS", "SmarterASP.NET", "GoDaddy VPS"],
       gradient: "bg-skill-gradient"
     }
   ];
@@ -74,22 +74,22 @@ const Skills = () => {
             <div className="space-y-8">
               {[
                 {
-                  period: "2019 - Present",
-                  title: "Full Stack .NET Core Developer",
-                  company: "Freelance & Projects",
-                  description: "Building modern web applications with ASP.NET Core, C#, and JavaScript frameworks"
+                  period: "Sep 2024 - Present",
+                  title: "Full Stack .NET Core MVC Developer",
+                  company: "Meditaz LLC",
+                  description: "Responsible for developing whole frontend for their EHR and as a team lead responsible for team tasks. Develop and maintain web applications utilizing ASP.NET Core, C#, HTML, CSS, JavaScript, and MS SQL."
                 },
                 {
-                  period: "Backend Specialist",
-                  title: "API & Microservices Developer",
-                  company: "Various Projects",
-                  description: "Developed RESTful APIs and microservices using ASP.NET Core Web API and Entity Framework"
+                  period: "March 2022 - October 2024",
+                  title: "Full Stack .NET Core MVC Developer",
+                  company: "Teleric Corporation",
+                  description: "Developed and maintained web applications utilizing ASP.NET Core, C#, HTML, CSS, JavaScript, and MS SQL. Managed website servers including IONOS, SmarterASP.NET, and GoDaddy VPS for optimal performance."
                 },
                 {
-                  period: "Frontend Expert",
-                  title: "UI/UX Developer",
-                  company: "Client Projects",
-                  description: "Built interactive user interfaces with React, Angular, and responsive design principles"
+                  period: "2019 - 2022",
+                  title: "Desktop Application Developer",
+                  company: "Techstep Sahiwal",
+                  description: "Designed and developed desktop applications with focus on inventory management and business solutions."
                 }
               ].map((exp, index) => (
                 <div key={index} className="flex items-start space-x-4">

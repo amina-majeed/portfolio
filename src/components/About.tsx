@@ -44,13 +44,13 @@ const About = () => {
             <h3 className="text-2xl font-bold mb-6">My Journey</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               With over 5 years of hands-on experience, I specialize in developing responsive web applications, 
-              RESTful APIs, and database-driven solutions. My expertise spans both frontend and backend 
-              technologies, with a focus on creating clean architecture and following best practices.
+              RESTful APIs, and database-driven solutions. Currently working as a team lead at Meditaz LLC, 
+              developing EHR systems and managing cross-functional teams to deliver innovative healthcare solutions.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              I'm constantly learning and adapting to new technologies to stay at the forefront of web development. 
-              When I'm not coding, you can find me contributing to open-source projects, exploring new tech trends, 
-              or mentoring aspiring developers in my community.
+              My expertise includes server management with IONOS, SmarterASP.NET, and GoDaddy VPS, along with 
+              utilizing AI tools to enhance productivity. I have completed advanced training in C# programming, 
+              full stack web development, and agile project management to stay current with industry best practices.
             </p>
           </div>
           
