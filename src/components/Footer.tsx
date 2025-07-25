@@ -13,7 +13,7 @@ const Footer = () => {
               Portfolio
             </div>
             <p className="text-muted-foreground mb-4">
-              Full-stack developer passionate about creating exceptional digital experiences.
+              Full Stack .NET Core Developer passionate about creating robust software solutions.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -76,12 +76,12 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm flex items-center">
-            © {currentYear} John Developer. Made with 
+            © {currentYear} Amina Majeed. Made with 
             <Heart className="mx-1 h-4 w-4 text-red-500" fill="currentColor" />
             and lots of coffee.
           </div>
           <div className="text-muted-foreground text-sm mt-4 md:mt-0">
-            Built with React, TypeScript & Tailwind CSS
+            Built with ASP.NET Core, C# & Modern Technologies
           </div>
         </div>
       </div>

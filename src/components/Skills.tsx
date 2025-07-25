@@ -4,23 +4,23 @@ import { Badge } from '@/components/ui/badge';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js", "HTML/CSS", "JavaScript"],
+      title: "Languages & Frameworks",
+      skills: ["C#", "ASP.NET Core", "HTML5", "CSS3", "JavaScript", "TypeScript", "jQuery", "Angular", "React"],
       gradient: "bg-skill-gradient"
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Python", "Express", "FastAPI", "PostgreSQL", "MongoDB", "Redis"],
+      title: "Backend & Database",
+      skills: ["ASP.NET Core", "Web API", "Entity Framework", "Dapper", "MS SQL", "SQL Server", "MySQL"],
       gradient: "bg-hero-gradient"
     },
     {
-      title: "Tools & Technologies",
-      skills: ["Git", "Docker", "AWS", "Vercel", "Firebase", "GraphQL", "REST APIs"],
+      title: "Tools & Cloud",
+      skills: ["Visual Studio", "VS Code", "Git", "Azure", "AWS", "Docker", "Kubernetes", "Postman"],
       gradient: "bg-text-gradient"
     },
     {
-      title: "Design & Other",
-      skills: ["Figma", "Adobe XD", "UI/UX Design", "Responsive Design", "Agile", "Testing"],
+      title: "Methodologies",
+      skills: ["Agile", "Scrum", "TDD", "DDD", "Clean Architecture", "MVC", "RESTful APIs"],
       gradient: "bg-skill-gradient"
     }
   ];
@@ -74,22 +74,22 @@ const Skills = () => {
             <div className="space-y-8">
               {[
                 {
-                  period: "2022 - Present",
-                  title: "Senior Full-Stack Developer",
-                  company: "Tech Innovations Inc.",
-                  description: "Leading development of scalable web applications using React and Node.js"
+                  period: "2019 - Present",
+                  title: "Full Stack .NET Core Developer",
+                  company: "Freelance & Projects",
+                  description: "Building modern web applications with ASP.NET Core, C#, and JavaScript frameworks"
                 },
                 {
-                  period: "2020 - 2022",
-                  title: "Frontend Developer",
-                  company: "Digital Solutions Co.",
-                  description: "Built responsive web applications and improved user experience metrics by 40%"
+                  period: "Backend Specialist",
+                  title: "API & Microservices Developer",
+                  company: "Various Projects",
+                  description: "Developed RESTful APIs and microservices using ASP.NET Core Web API and Entity Framework"
                 },
                 {
-                  period: "2019 - 2020",
-                  title: "Junior Developer",
-                  company: "StartUp Labs",
-                  description: "Contributed to multiple projects while learning modern development practices"
+                  period: "Frontend Expert",
+                  title: "UI/UX Developer",
+                  company: "Client Projects",
+                  description: "Built interactive user interfaces with React, Angular, and responsive design principles"
                 }
               ].map((exp, index) => (
                 <div key={index} className="flex items-start space-x-4">

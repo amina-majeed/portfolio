@@ -33,9 +33,9 @@ const About = () => {
             About <span className="bg-text-gradient bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate full-stack developer with 5+ years of experience building web applications 
-            that solve real-world problems. I love turning complex requirements into simple, 
-            beautiful solutions.
+            Passionate Full Stack .NET Core Developer with expertise in building modern web applications 
+            using ASP.NET Core, C#, and JavaScript frameworks. Creating clean, efficient, and scalable 
+            solutions that deliver exceptional user experiences.
           </p>
         </div>
 
@@ -43,14 +43,14 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6">My Journey</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Started my journey in computer science and quickly fell in love with web development. 
-              Over the years, I've worked with startups and established companies, helping them 
-              build scalable applications and improve their digital presence.
+              With over 5 years of hands-on experience, I specialize in developing responsive web applications, 
+              RESTful APIs, and database-driven solutions. My expertise spans both frontend and backend 
+              technologies, with a focus on creating clean architecture and following best practices.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              I'm constantly learning new technologies and staying up-to-date with industry trends. 
-              When I'm not coding, you can find me contributing to open-source projects or 
-              mentoring aspiring developers.
+              I'm constantly learning and adapting to new technologies to stay at the forefront of web development. 
+              When I'm not coding, you can find me contributing to open-source projects, exploring new tech trends, 
+              or mentoring aspiring developers in my community.
             </p>
           </div>
           

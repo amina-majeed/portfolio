@@ -36,19 +36,19 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      content: "john@developer.com",
-      link: "mailto:john@developer.com"
+      content: "mmaham57@gmail.com",
+      link: "mailto:mmaham57@gmail.com"
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      content: "+92 307 6933672",
+      link: "tel:+923076933672"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Location",
-      content: "San Francisco, CA",
+      content: "Lahore, Pakistan",
       link: "#"
     }
   ];
@@ -61,8 +61,8 @@ const Contact = () => {
             Get In <span className="bg-text-gradient bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss your project and how we can 
-            work together to create something amazing.
+            I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. 
+            Feel free to reach out!
           </p>
         </div>
 

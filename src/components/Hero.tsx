@@ -17,11 +17,11 @@ const Hero = () => {
         <div className="animate-slide-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-text-gradient bg-clip-text text-transparent">
-              John Developer
+              Amina Majeed
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Full-Stack Developer crafting beautiful digital experiences with modern technologies
+            Full Stack .NET Core Developer specializing in ASP.NET Core, C#, and scalable web applications
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
