@@ -74,7 +74,13 @@ const Skills = () => {
             <div className="space-y-8">
               {[
                 {
-                  period: "Sep 2024 - Present",
+                  period: "May 2025 - Present",
+                  title: "Team Lead",
+                  company: "Nastron Solutions",
+                  description: "Leading a cross-functional team of developers and engineers to design and deliver scalable software solutions for solar energy data management and automation. Responsible for overseeing project execution, client communication, and integrating FTP, API, and cloud-based data pipelines."
+                },
+                {
+                  period: "Sep 2024 - May 2025",
                   title: "Full Stack .NET Core MVC Developer",
                   company: "Meditaz LLC",
                   description: "Responsible for developing whole frontend for their EHR and as a team lead responsible for team tasks. Develop and maintain web applications utilizing ASP.NET Core, C#, HTML, CSS, JavaScript, and MS SQL."
