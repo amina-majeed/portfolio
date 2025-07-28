@@ -42,13 +42,17 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a 
-              href="#" 
+              href="https://github.com/amina-majeed"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
             >
               <Github size={32} />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/amna-majeed-96403a2a2"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
             >
               <Linkedin size={32} />
