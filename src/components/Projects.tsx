@@ -10,54 +10,56 @@ const Projects = () => {
   const projects = [
     {
       title: "Electronic Health Record (EHR) System",
-      description: "Developed a full-featured EHR system enabling secure, real-time access to patient data including medical history, prescriptions, lab results, and imaging. Implemented role-based access control, audit trails, and data encryption to ensure HIPAA compliance.",
+      description: "Developed a HIPAA-compliant EHR system with secure access to patient data, role-based control, and HL7/FHIR interoperability. Led frontend development and team coordination.",
       image: project1,
-      technologies: ["ASP.NET Core", "C#", "MS SQL", "HL7", "FHIR"],
+      technologies: ["ASP.NET Core", "C#", "MS SQL", "HL7", "FHIR", "HTML/CSS", "JavaScript"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      role: "Full Stack Developer & Team Lead",
+      type: "Web Application"
     },
     {
-      title: "Online Learning Management System",
-      description: "Developed a comprehensive web-based platform for managing online courses, student enrollments, and assessments. Integrated real-time chat and video streaming features.",
+      title: "Solar Plant Data Ingestion System",
+      description: "Led the backend development of a data ingestion platform integrating FTP/API/manual uploads from solar plants. Built admin dashboard, real-time file handling, and access controls.",
       image: project2,
-      technologies: ["ASP.NET Core", "JavaScript", "MS SQL", "SignalR"],
+      technologies: ["Django", "Python", "MongoDB", "JavaScript", "Bootstrap"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      role: "Team Lead",
+      type: "Data Platform"
     },
     {
-      title: "E-commerce Platform Development",
-      description: "Built and deployed a scalable e-commerce website using ASP.NET Core, incorporating secure payment gateways, product catalogs, and order management.",
+      title: "E-Commerce Platform",
+      description: "Built a scalable e-commerce platform with secure checkout, product management, and order tracking. Integrated payment gateway and user-friendly admin panel.",
       image: project3,
-      technologies: ["ASP.NET Core", "C#", "MS SQL", "Payment Gateway"],
+      technologies: ["ASP.NET Core", "C#", "MS SQL", "Razor Pages"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
+      role: "Full Stack Developer",
+      type: "Web Application"
+    },
+    {
+      title: "Learning Management System (LMS)",
+      description: "Developed a complete LMS with course management, student enrollment, quizzes, and live chat/video streaming.",
+      technologies: ["ASP.NET Core", "JavaScript", "SignalR", "SQL Server"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      role: "Full Stack Developer",
+      type: "Web Platform"
     },
     {
       title: "Inventory Management System",
-      description: "Designed and developed a desktop application to track inventory levels, manage supplier information, and generate real-time inventory reports.",
-      technologies: ["C#", "Desktop Application", "MS SQL", "Reporting"],
+      description: "Designed and developed a desktop-based inventory tracker with real-time stock updates, supplier management, and report generation.",
+      technologies: ["C#", "Windows Forms/WPF", "SQL"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "Faishon360.com",
-      description: "Fashion e-commerce platform with modern design and user experience.",
-      technologies: ["ASP.NET Core", "JavaScript", "CSS"],
-      liveUrl: "https://faishon360.com",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "C-Hub Development Platform",
-      description: "Development and learning platform for programmers and tech enthusiasts.",
-      technologies: ["ASP.NET Core", "C#", "Web API"],
-      liveUrl: "https://c-hub.net/",
-      githubUrl: "#",
-      featured: false
+      featured: false,
+      role: "Developer",
+      type: "Desktop Application"
     }
   ];
 
