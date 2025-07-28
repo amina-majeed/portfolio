@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github } from 'lucide-react';
 import project1 from '@/assets/project-1.jpg';
-import solarProject from '@/assets/solar-project.jpg';
+import dataScienceProject from '@/assets/data-science-project.jpg';
 import project3 from '@/assets/project-3.jpg';
 
 const Projects = () => {
@@ -22,7 +22,7 @@ const Projects = () => {
     {
       title: "Solar Plant Data Ingestion System",
       description: "Led the backend development of a data ingestion platform integrating FTP/API/manual uploads from solar plants. Built admin dashboard, real-time file handling, and access controls.",
-      image: solarProject,
+      image: dataScienceProject,
       technologies: ["Django", "Python", "MongoDB", "JavaScript", "Bootstrap"],
       liveUrl: "#",
       githubUrl: "#",
