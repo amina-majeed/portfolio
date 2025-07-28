@@ -71,86 +71,183 @@ const Projects = () => {
             Featured <span className="bg-text-gradient bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of some of my recent work. Each project represents a unique challenge 
-            and demonstrates different aspects of my development skills.
+            A showcase of my work across different technology stacks and domains.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          {projects.filter(p => p.featured).map((project, index) => (
-            <Card 
-              key={index} 
-              className="group bg-card/50 backdrop-blur-sm hover:bg-card transition-all duration-500 hover:scale-105 border border-border/50 overflow-hidden"
-            >
-              <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl font-bold">{project.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="outline" className="text-xs">
-                      {tech}
+        {/* .NET Stack Projects */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
+            <Badge variant="secondary" className="text-sm">.NET Stack</Badge>
+            <span className="text-muted-foreground text-lg">ASP.NET Core • C# • MS SQL</span>
+          </h3>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {projects.filter(p => p.technologies.includes("ASP.NET Core")).map((project, index) => (
+              <Card 
+                key={index} 
+                className="group bg-card/50 backdrop-blur-sm hover:bg-card transition-all duration-500 hover:scale-105 border border-border/50 overflow-hidden"
+              >
+                {project.image && (
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                )}
+                <CardHeader>
+                  <div className="flex justify-between items-start mb-2">
+                    <CardTitle className="text-xl font-bold">{project.title}</CardTitle>
+                    {project.role && (
+                      <Badge variant="outline" className="text-xs whitespace-nowrap">
+                        {project.role}
+                      </Badge>
+                    )}
+                  </div>
+                  {project.type && (
+                    <Badge variant="secondary" className="text-xs w-fit">
+                      {project.type}
                     </Badge>
-                  ))}
-                </div>
-                <div className="flex gap-3">
-                  <Button size="sm" className="bg-primary hover:bg-primary/90">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </Button>
-                  <Button size="sm" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                  )}
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.technologies.map((tech, techIndex) => (
+                      <Badge key={techIndex} variant="outline" className="text-xs">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex gap-3">
+                    <Button size="sm" className="bg-primary hover:bg-primary/90">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </Button>
+                    <Button size="sm" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
-        {/* Other Projects */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.filter(p => !p.featured).map((project, index) => (
-            <Card 
-              key={index} 
-              className="group bg-card/30 hover:bg-card/50 transition-all duration-300 hover:scale-105 border border-border/50"
-            >
-              <CardHeader className="pb-2">
-                <CardTitle className="text-lg">{project.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm mb-4">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-1 mb-4">
-                  {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary" className="text-xs">
-                      {tech}
+        {/* Python/Django Stack Projects */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
+            <Badge variant="secondary" className="text-sm">Python Stack</Badge>
+            <span className="text-muted-foreground text-lg">Django • Python • MongoDB</span>
+          </h3>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {projects.filter(p => p.technologies.includes("Python")).map((project, index) => (
+              <Card 
+                key={index} 
+                className="group bg-card/50 backdrop-blur-sm hover:bg-card transition-all duration-500 hover:scale-105 border border-border/50 overflow-hidden"
+              >
+                {project.image && (
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                )}
+                <CardHeader>
+                  <div className="flex justify-between items-start mb-2">
+                    <CardTitle className="text-xl font-bold">{project.title}</CardTitle>
+                    {project.role && (
+                      <Badge variant="outline" className="text-xs whitespace-nowrap">
+                        {project.role}
+                      </Badge>
+                    )}
+                  </div>
+                  {project.type && (
+                    <Badge variant="secondary" className="text-xs w-fit">
+                      {project.type}
                     </Badge>
-                  ))}
-                </div>
-                <div className="flex gap-2">
-                  <Button size="sm" variant="ghost" className="p-2 hover:text-primary">
-                    <ExternalLink className="h-4 w-4" />
-                  </Button>
-                  <Button size="sm" variant="ghost" className="p-2 hover:text-primary">
-                    <Github className="h-4 w-4" />
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                  )}
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.technologies.map((tech, techIndex) => (
+                      <Badge key={techIndex} variant="outline" className="text-xs">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex gap-3">
+                    <Button size="sm" className="bg-primary hover:bg-primary/90">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </Button>
+                    <Button size="sm" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop Applications */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
+            <Badge variant="secondary" className="text-sm">Desktop Apps</Badge>
+            <span className="text-muted-foreground text-lg">C# • Windows Forms/WPF</span>
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.filter(p => p.technologies.includes("Windows Forms/WPF")).map((project, index) => (
+              <Card 
+                key={index} 
+                className="group bg-card/30 hover:bg-card/50 transition-all duration-300 hover:scale-105 border border-border/50"
+              >
+                <CardHeader className="pb-2">
+                  <div className="flex justify-between items-start mb-2">
+                    <CardTitle className="text-lg">{project.title}</CardTitle>
+                  </div>
+                  {project.type && (
+                    <Badge variant="secondary" className="text-xs w-fit">
+                      {project.type}
+                    </Badge>
+                  )}
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {project.technologies.slice(0, 3).map((tech, techIndex) => (
+                      <Badge key={techIndex} variant="secondary" className="text-xs">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex gap-2">
+                    <Button size="sm" variant="ghost" className="p-2 hover:text-primary">
+                      <ExternalLink className="h-4 w-4" />
+                    </Button>
+                    <Button size="sm" variant="ghost" className="p-2 hover:text-primary">
+                      <Github className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
