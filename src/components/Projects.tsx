@@ -82,14 +82,14 @@ const Projects = () => {
       type: "Corporate"
     },
     {
-      title: "Society for Technology",
-      description: "Developed a tech-focused informational platform to promote events, memberships, and news. Included admin backend for content management.",
-      technologies: ["CMS", "Informational Portal", "Admin Backend", "Content Management"],
+      title: "IMPAC PAC – Political Party Website",
+      description: "Developed a comprehensive political action committee website for IMPAC PAC in the US. Built to engage voters, promote candidates, and facilitate political contributions with secure donation systems.",
+      technologies: ["Political Campaign", "Donation System", "Voter Engagement", "Content Management"],
       liveUrl: "https://societyfortechnology.com",
       githubUrl: "#",
       featured: false,
       role: "Developer",
-      type: "Portal"
+      type: "Political"
     },
     {
       title: "Regrow Trees – Non-Profit Initiative",
