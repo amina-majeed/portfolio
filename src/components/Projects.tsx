@@ -53,8 +53,8 @@ const Projects = () => {
     },
     {
       title: "Urological Health Associates – Medical Clinic Website",
-      description: "Developed a comprehensive medical website for doctors running a Urological Health Associates clinic. Built with a powerful admin panel that allows complete content customization - users can create new sections, modify text colors, and control every aspect of the website through the admin interface.",
-      technologies: ["Healthcare", "Admin Panel", "Content Management", "Customizable UI", "HIPAA"],
+      description: "Developed a static informational website for doctors running a Urological Health Associates clinic. Features patient information, medical services details, and contact information for the urology practice.",
+      technologies: ["Healthcare", "Static Website", "Medical Information", "Responsive Design", "HIPAA"],
       liveUrl: "https://uhaaz.com",
       githubUrl: "#",
       featured: false,
