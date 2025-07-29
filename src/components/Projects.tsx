@@ -31,35 +31,86 @@ const Projects = () => {
       type: "Data Platform"
     },
     {
-      title: "E-Commerce Platform",
-      description: "Built a scalable e-commerce platform with secure checkout, product management, and order tracking. Integrated payment gateway and user-friendly admin panel.",
+      title: "Faishon360 – Online Clothing Store",
+      description: "Designed and developed a responsive e-commerce site featuring a product catalog, cart, order system, and user dashboard. Focused on performance, usability, and secure payment integration.",
       image: project3,
-      technologies: ["ASP.NET Core", "C#", "MS SQL", "Razor Pages"],
-      liveUrl: "#",
+      technologies: ["E-commerce", "UX/UI", "Responsive Web Design", "Admin Panel", "Payment Integration"],
+      liveUrl: "http://faishon360.com/home/",
+      githubUrl: "#",
+      featured: true,
+      role: "Full Stack Developer",
+      type: "E-commerce"
+    },
+    {
+      title: "AllExams – Online Testing Platform",
+      description: "Built a complete online testing system for academic and licensing exams. Includes secure logins, role-based access, real-time scoring, and certificate generation.",
+      technologies: ["Exam System", "Security", "PDF Certificates", "Real-Time Logic", "Authentication"],
+      liveUrl: "https://allexams.net",
+      githubUrl: "#",
+      featured: true,
+      role: "Backend + Frontend Developer",
+      type: "Testing Platform"
+    },
+    {
+      title: "UHA – Healthcare Website",
+      description: "Developed a HIPAA-conscious healthcare website for Urologic Health Associates. Designed for patient engagement, appointment bookings, and service details.",
+      technologies: ["Healthcare", "Web Design", "Accessibility", "Responsive Design", "HIPAA"],
+      liveUrl: "https://uhaaz.com",
       githubUrl: "#",
       featured: false,
       role: "Full Stack Developer",
-      type: "Web Application"
+      type: "Healthcare"
     },
     {
-      title: "Learning Management System (LMS)",
-      description: "Developed a complete LMS with course management, student enrollment, quizzes, and live chat/video streaming.",
-      technologies: ["ASP.NET Core", "JavaScript", "SignalR", "SQL Server"],
-      liveUrl: "#",
+      title: "Align Environmental Solutions",
+      description: "Built an informational site for an environmental consultancy, including services, case studies, and contact forms. Focused on clean layout and fast load time.",
+      technologies: ["Business Website", "SEO Optimization", "Case Study Design", "Contact Forms"],
+      liveUrl: "https://alignenv.com",
       githubUrl: "#",
       featured: false,
-      role: "Full Stack Developer",
-      type: "Web Platform"
+      role: "Frontend Developer",
+      type: "Consultancy"
     },
     {
-      title: "Inventory Management System",
-      description: "Designed and developed a desktop-based inventory tracker with real-time stock updates, supplier management, and report generation.",
-      technologies: ["C#", "Windows Forms/WPF", "SQL"],
-      liveUrl: "#",
+      title: "BEY Manufacturing",
+      description: "Created a professional site to showcase BEY Manufacturing's products and capabilities. Custom layout with structured content and lead capture.",
+      technologies: ["Company Profile", "UI Layout", "Contact Forms", "Lead Generation"],
+      liveUrl: "https://beymfg.com",
+      githubUrl: "#",
+      featured: false,
+      role: "Web Developer",
+      type: "Corporate"
+    },
+    {
+      title: "Society for Technology",
+      description: "Developed a tech-focused informational platform to promote events, memberships, and news. Included admin backend for content management.",
+      technologies: ["CMS", "Informational Portal", "Admin Backend", "Content Management"],
+      liveUrl: "https://societyfortechnology.com",
       githubUrl: "#",
       featured: false,
       role: "Developer",
-      type: "Desktop Application"
+      type: "Portal"
+    },
+    {
+      title: "Regrow Trees – Non-Profit Initiative",
+      description: "Built a donation-driven tree-planting platform for a sustainability initiative. Designed to inspire action and track progress.",
+      technologies: ["Nonprofit", "Donation System", "Environmental Design", "Progress Tracking"],
+      liveUrl: "https://regrow-trees.com/",
+      githubUrl: "#",
+      featured: false,
+      role: "Designer & Developer",
+      type: "Non-Profit"
+    },
+    {
+      title: "E1T1 Creative Coaching App",
+      description: "Built a full-featured Flutter mobile app for E1T1 — a coaching and referral-based platform combining MLM compensation, fan engagement, and music submission rewards. The app includes multi-tiered progression, real-time commission tracking, coaching session scheduling, and fan conversion bonuses. Integrated Firebase backend and custom compensation logic.",
+      image: "/lovable-uploads/bc42ac15-55bc-4d62-8512-98153dddae0f.png",
+      technologies: ["Flutter", "iOS", "Mobile App", "Dart", "Firebase", "MLM System"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+      role: "Mobile App Developer",
+      type: "Mobile Application"
     }
   ];
 
@@ -239,33 +290,42 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Desktop Applications */}
-        <div className="mb-20">
+        {/* Web Projects */}
+        <div className="mb-32">
           <div className="flex items-center gap-6 mb-16">
-            <div className="h-2 w-16 bg-gradient-to-r from-muted-foreground to-foreground rounded-full shadow-glow"></div>
-            <h3 className="text-4xl lg:text-5xl font-bold text-foreground">Desktop Solutions</h3>
+            <div className="h-2 w-16 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-glow"></div>
+            <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">Web Applications</h3>
             <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
             <div className="flex gap-3 text-sm">
-              <Badge variant="outline" className="border-muted-foreground/40 bg-muted/5 px-3 py-1">C#</Badge>
-              <Badge variant="outline" className="border-muted-foreground/40 bg-muted/5 px-3 py-1">WPF</Badge>
+              <Badge variant="outline" className="border-blue-500/40 text-blue-500 bg-blue-500/5 px-3 py-1">Full Stack</Badge>
+              <Badge variant="outline" className="border-blue-500/40 text-blue-500 bg-blue-500/5 px-3 py-1">Web Dev</Badge>
             </div>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.filter(p => p.technologies.includes("Windows Forms/WPF")).map((project, index) => (
+            {projects.filter(p => !p.technologies.includes("ASP.NET Core") && !p.technologies.includes("Python") && !p.technologies.includes("Flutter")).map((project, index) => (
               <Card 
                 key={index} 
-                className="group bg-card-gradient backdrop-blur-xl hover:shadow-elegant transition-all duration-500 hover:scale-110 border border-border/30 hover:border-foreground/30 shadow-card"
+                className="group bg-card-gradient backdrop-blur-xl hover:shadow-elegant transition-all duration-500 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50 shadow-card"
               >
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start mb-2">
-                    <CardTitle className="text-lg font-bold">{project.title}</CardTitle>
+                    <CardTitle className="text-lg font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+                      {project.title}
+                    </CardTitle>
                   </div>
-                  {project.type && (
-                    <Badge variant="secondary" className="text-xs w-fit bg-muted/30">
-                      {project.type}
-                    </Badge>
-                  )}
+                  <div className="flex justify-between items-center">
+                    {project.type && (
+                      <Badge variant="secondary" className="text-xs w-fit bg-blue-500/20 text-blue-500 border-blue-500/30">
+                        {project.type}
+                      </Badge>
+                    )}
+                    {project.role && (
+                      <Badge variant="outline" className="text-xs border-muted-foreground/30">
+                        {project.role}
+                      </Badge>
+                    )}
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
@@ -273,20 +333,110 @@ const Projects = () => {
                   </p>
                   <div className="flex flex-wrap gap-1 mb-6">
                     {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs border-muted-foreground/20">
+                      <Badge key={techIndex} variant="outline" className="text-xs border-muted-foreground/20 hover:bg-blue-500/10 transition-colors">
                         {tech}
                       </Badge>
                     ))}
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="ghost" className="p-2 hover:text-primary hover:bg-primary/10">
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
-                    <Button size="sm" variant="ghost" className="p-2 hover:text-primary hover:bg-primary/10">
-                      <Github className="h-4 w-4" />
+                    {project.liveUrl && project.liveUrl !== "#" ? (
+                      <Button size="sm" asChild className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium">
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          Live
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button size="sm" variant="ghost" className="p-2 hover:text-blue-500 hover:bg-blue-500/10">
+                        <ExternalLink className="h-4 w-4" />
+                      </Button>
+                    )}
+                    <Button size="sm" variant="outline" className="border-blue-500/30 text-blue-500 hover:bg-blue-500/10 hover:border-blue-500/50">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
                     </Button>
                   </div>
                 </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile Applications */}
+        <div className="mb-20">
+          <div className="flex items-center gap-6 mb-16">
+            <div className="h-2 w-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-glow"></div>
+            <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Mobile Solutions</h3>
+            <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
+            <div className="flex gap-3 text-sm">
+              <Badge variant="outline" className="border-purple-500/40 text-purple-500 bg-purple-500/5 px-3 py-1">Flutter</Badge>
+              <Badge variant="outline" className="border-purple-500/40 text-purple-500 bg-purple-500/5 px-3 py-1">Mobile</Badge>
+            </div>
+          </div>
+          
+          <div className="grid lg:grid-cols-1 gap-8">
+            {projects.filter(p => p.technologies.includes("Flutter")).map((project, index) => (
+              <Card 
+                key={index} 
+                className="group relative bg-card-gradient backdrop-blur-2xl hover:shadow-elegant transition-all duration-700 hover:scale-[1.02] border border-purple-500/30 hover:border-purple-500/50 overflow-hidden shadow-card"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="lg:flex lg:items-center">
+                  {project.image && (
+                    <div className="lg:w-1/3 relative overflow-hidden">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-background/90 via-background/30 to-transparent"></div>
+                      <div className="absolute top-4 right-4">
+                        <Badge variant="secondary" className="bg-purple-500/20 text-purple-500 border-purple-500/30 backdrop-blur-sm">
+                          {project.type}
+                        </Badge>
+                      </div>
+                    </div>
+                  )}
+                  
+                  <div className="lg:w-2/3 lg:p-8 relative z-10">
+                    <CardHeader>
+                      <div className="flex justify-between items-start mb-3">
+                        <CardTitle className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+                          {project.title}
+                        </CardTitle>
+                        {project.role && (
+                          <Badge variant="outline" className="text-xs whitespace-nowrap border-purple-500/50 text-purple-500">
+                            {project.role}
+                          </Badge>
+                        )}
+                      </div>
+                    </CardHeader>
+                    
+                    <CardContent>
+                      <p className="text-muted-foreground mb-6 leading-relaxed">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-8">
+                        {project.technologies.map((tech, techIndex) => (
+                          <Badge key={techIndex} variant="secondary" className="text-xs bg-muted/50 hover:bg-purple-500/20 transition-colors">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                      <div className="flex gap-3">
+                        <Button size="sm" className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-medium">
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          App Store
+                        </Button>
+                        <Button size="sm" variant="outline" className="border-purple-500/30 text-purple-500 hover:bg-purple-500/10 hover:border-purple-500/50">
+                          <Github className="mr-2 h-4 w-4" />
+                          Code
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </div>
+                </div>
               </Card>
             ))}
           </div>
