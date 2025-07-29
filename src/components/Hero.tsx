@@ -83,7 +83,7 @@ const Hero = () => {
           </div>
           
           {/* Enhanced description */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-16 leading-relaxed">
+          <p className="text-sm md:text-lg text-muted-foreground max-w-4xl mx-auto mb-16 leading-relaxed">
             Elite <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded-lg">Full Stack Developer</span> with 5+ years of experience architecting scalable solutions and leading high-performance teams. 
             <br className="hidden md:block" />
             Expertise in <span className="text-accent font-bold bg-accent/10 px-2 py-1 rounded-lg">.NET, Python, Cloud Architecture</span> & cutting-edge web technologies.
