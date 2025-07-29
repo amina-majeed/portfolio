@@ -146,7 +146,7 @@ const Projects = () => {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-8">
-            {projects.filter(p => p.technologies.includes("ASP.NET Core")).map((project, index) => (
+            {projects.filter(p => p.technologies.includes("ASP.NET Core") || (!p.technologies.includes("Python") && !p.technologies.includes("Flutter"))).map((project, index) => (
               <Card 
                 key={index} 
                 className="group relative bg-card-gradient backdrop-blur-2xl hover:shadow-elegant transition-all duration-700 hover:scale-[1.03] border border-primary/30 hover:border-primary/50 overflow-hidden shadow-card"
@@ -194,14 +194,19 @@ const Projects = () => {
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button size="sm" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-medium">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
-                    </Button>
-                    <Button size="sm" variant="outline" className="border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
-                    </Button>
+                    {project.liveUrl && project.liveUrl !== "#" ? (
+                      <Button size="sm" asChild className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-medium">
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          Live Demo
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button size="sm" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-medium">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -277,86 +282,10 @@ const Projects = () => {
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Button>
-                        <Button size="sm" variant="outline" className="border-accent/30 text-accent hover:bg-accent/10 hover:border-accent/50">
-                          <Github className="mr-2 h-4 w-4" />
-                          Code
-                        </Button>
                       </div>
                     </CardContent>
                   </div>
                 </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* Web Projects */}
-        <div className="mb-32">
-          <div className="flex items-center gap-6 mb-16">
-            <div className="h-2 w-16 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-glow"></div>
-            <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">Web Applications</h3>
-            <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
-            <div className="flex gap-3 text-sm">
-              <Badge variant="outline" className="border-blue-500/40 text-blue-500 bg-blue-500/5 px-3 py-1">Full Stack</Badge>
-              <Badge variant="outline" className="border-blue-500/40 text-blue-500 bg-blue-500/5 px-3 py-1">Web Dev</Badge>
-            </div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.filter(p => !p.technologies.includes("ASP.NET Core") && !p.technologies.includes("Python") && !p.technologies.includes("Flutter")).map((project, index) => (
-              <Card 
-                key={index} 
-                className="group bg-card-gradient backdrop-blur-xl hover:shadow-elegant transition-all duration-500 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50 shadow-card"
-              >
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start mb-2">
-                    <CardTitle className="text-lg font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
-                      {project.title}
-                    </CardTitle>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    {project.type && (
-                      <Badge variant="secondary" className="text-xs w-fit bg-blue-500/20 text-blue-500 border-blue-500/30">
-                        {project.type}
-                      </Badge>
-                    )}
-                    {project.role && (
-                      <Badge variant="outline" className="text-xs border-muted-foreground/30">
-                        {project.role}
-                      </Badge>
-                    )}
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-1 mb-6">
-                    {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs border-muted-foreground/20 hover:bg-blue-500/10 transition-colors">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="flex gap-2">
-                    {project.liveUrl && project.liveUrl !== "#" ? (
-                      <Button size="sm" asChild className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium">
-                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Live
-                        </a>
-                      </Button>
-                    ) : (
-                      <Button size="sm" variant="ghost" className="p-2 hover:text-blue-500 hover:bg-blue-500/10">
-                        <ExternalLink className="h-4 w-4" />
-                      </Button>
-                    )}
-                    <Button size="sm" variant="outline" className="border-blue-500/30 text-blue-500 hover:bg-blue-500/10 hover:border-blue-500/50">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
-                    </Button>
-                  </div>
-                </CardContent>
               </Card>
             ))}
           </div>
@@ -428,10 +357,6 @@ const Projects = () => {
                         <Button size="sm" className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-medium">
                           <ExternalLink className="mr-2 h-4 w-4" />
                           App Store
-                        </Button>
-                        <Button size="sm" variant="outline" className="border-purple-500/30 text-purple-500 hover:bg-purple-500/10 hover:border-purple-500/50">
-                          <Github className="mr-2 h-4 w-4" />
-                          Code
                         </Button>
                       </div>
                     </CardContent>
