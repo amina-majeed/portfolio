@@ -44,8 +44,8 @@ const About = () => {
             <h3 className="text-2xl font-bold mb-6">My Journey</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               With over 5 years of hands-on experience, I specialize in developing responsive web applications, 
-              RESTful APIs, and database-driven solutions. Currently working as a team lead at Meditaz LLC, 
-              developing EHR systems and managing cross-functional teams to deliver innovative healthcare solutions.
+              RESTful APIs, and database-driven solutions. Currently working as a Team Lead at Nastron Solutions, 
+              leading development teams and delivering innovative software solutions across multiple technology stacks.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               My expertise includes server management with IONOS, SmarterASP.NET, and GoDaddy VPS, along with 
