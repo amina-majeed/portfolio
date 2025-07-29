@@ -112,7 +112,7 @@ const Hero = () => {
           </div>
 
           {/* Enhanced Social Links */}
-          <div className="flex gap-8 justify-center">
+          <div className="flex gap-8 justify-center relative z-20">
             <a 
               href="https://github.com/amina-majeed" 
               target="_blank" 
