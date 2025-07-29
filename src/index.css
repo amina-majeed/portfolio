@@ -2,50 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Design System - Professional & Modern */
+/* Elite Developer Portfolio - Sophisticated & Modern */
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Base theme - Rich dark with sophisticated blues */
+    --background: 220 15% 2%;
+    --foreground: 220 15% 97%;
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 220 15% 4%;
+    --card-foreground: 220 15% 97%;
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 220 15% 4%;
+    --popover-foreground: 220 15% 97%;
 
-    --primary: 220 100% 65%;
-    --primary-foreground: 0 0% 98%;
+    /* Primary - Electric blue for tech feel */
+    --primary: 212 100% 65%;
+    --primary-foreground: 220 15% 2%;
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    /* Secondary - Elegant slate */
+    --secondary: 220 12% 10%;
+    --secondary-foreground: 220 15% 97%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 220 12% 8%;
+    --muted-foreground: 220 8% 70%;
 
-    --accent: 260 100% 70%;
-    --accent-foreground: 0 0% 98%;
+    /* Accent - Cyber purple */
+    --accent: 250 95% 70%;
+    --accent-foreground: 220 15% 2%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 15% 97%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 220 100% 65%;
+    --border: 220 12% 12%;
+    --input: 220 12% 8%;
+    --ring: 212 100% 65%;
 
-    /* Portfolio-specific colors */
-    --hero-gradient-start: 220 100% 65%;
-    --hero-gradient-end: 260 100% 70%;
-    --skill-gradient-start: 260 100% 70%;
-    --skill-gradient-end: 300 100% 75%;
-    --project-card-bg: 240 5% 6%;
-    --text-gradient-start: 220 100% 65%;
-    --text-gradient-end: 260 100% 70%;
+    /* Advanced portfolio gradients */
+    --hero-gradient-start: 212 100% 65%;
+    --hero-gradient-end: 250 95% 70%;
+    --hero-gradient-accent: 190 100% 60%;
+    
+    --skill-gradient-start: 250 95% 70%;
+    --skill-gradient-end: 280 100% 75%;
+    
+    --card-gradient-start: 220 15% 4%;
+    --card-gradient-end: 220 12% 6%;
+    
+    --text-gradient-start: 212 100% 65%;
+    --text-gradient-end: 250 95% 70%;
+    --text-gradient-accent: 190 100% 60%;
 
-    /* Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Sophisticated shadows and glows */
+    --shadow-elegant: 0 10px 40px -15px hsl(212 100% 65% / 0.3);
+    --shadow-glow: 0 0 60px hsl(212 100% 65% / 0.15);
+    --shadow-card: 0 4px 30px -8px hsl(220 15% 2% / 0.5);
+    
+    /* Enhanced animations */
+    --transition-smooth: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-glow: box-shadow 0.3s ease-in-out;
 
     --radius: 0.5rem;
 

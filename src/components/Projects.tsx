@@ -64,27 +64,33 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Featured <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Projects</span>
+    <section id="projects" className="py-32 px-4 bg-gradient-to-b from-background via-background/95 to-muted/10 relative overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0">
+        <div className="absolute top-40 right-20 w-96 h-96 bg-accent/5 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-80 h-80 bg-primary/5 rounded-full filter blur-3xl"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-24">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">
+            Elite <span className="bg-text-gradient bg-clip-text text-transparent">Portfolio</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of my work across different technology stacks and domains, from healthcare to energy management.
+          <p className="text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            Showcasing sophisticated solutions across enterprise-grade systems, from healthcare platforms to energy management infrastructure.
           </p>
         </div>
 
         {/* .NET Stack Projects */}
-        <div className="mb-20">
-          <div className="flex items-center gap-4 mb-10">
-            <div className="h-1 w-12 bg-gradient-to-r from-primary to-accent rounded-full"></div>
-            <h3 className="text-3xl font-bold text-foreground">.NET Stack</h3>
-            <div className="flex-1 h-px bg-border"></div>
-            <div className="flex gap-2 text-sm text-muted-foreground">
-              <Badge variant="outline" className="border-primary/30 text-primary">ASP.NET Core</Badge>
-              <Badge variant="outline" className="border-primary/30 text-primary">C#</Badge>
-              <Badge variant="outline" className="border-primary/30 text-primary">MS SQL</Badge>
+        <div className="mb-32">
+          <div className="flex items-center gap-6 mb-16">
+            <div className="h-2 w-16 bg-hero-gradient rounded-full shadow-glow"></div>
+            <h3 className="text-4xl lg:text-5xl font-bold bg-text-gradient bg-clip-text text-transparent">.NET Ecosystem</h3>
+            <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
+            <div className="flex gap-3 text-sm">
+              <Badge variant="outline" className="border-primary/40 text-primary bg-primary/5 px-3 py-1">ASP.NET Core</Badge>
+              <Badge variant="outline" className="border-primary/40 text-primary bg-primary/5 px-3 py-1">C#</Badge>
+              <Badge variant="outline" className="border-primary/40 text-primary bg-primary/5 px-3 py-1">MS SQL</Badge>
             </div>
           </div>
           
@@ -92,7 +98,7 @@ const Projects = () => {
             {projects.filter(p => p.technologies.includes("ASP.NET Core")).map((project, index) => (
               <Card 
                 key={index} 
-                className="group relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg hover:from-card/90 hover:to-card/60 transition-all duration-700 hover:scale-[1.02] border border-primary/20 overflow-hidden shadow-2xl hover:shadow-primary/10"
+                className="group relative bg-card-gradient backdrop-blur-2xl hover:shadow-elegant transition-all duration-700 hover:scale-[1.03] border border-primary/30 hover:border-primary/50 overflow-hidden shadow-card"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
@@ -153,15 +159,15 @@ const Projects = () => {
         </div>
 
         {/* Python/Django Stack Projects */}
-        <div className="mb-20">
-          <div className="flex items-center gap-4 mb-10">
-            <div className="h-1 w-12 bg-gradient-to-r from-accent to-primary rounded-full"></div>
-            <h3 className="text-3xl font-bold text-foreground">Python Stack</h3>
-            <div className="flex-1 h-px bg-border"></div>
-            <div className="flex gap-2 text-sm text-muted-foreground">
-              <Badge variant="outline" className="border-accent/30 text-accent">Django</Badge>
-              <Badge variant="outline" className="border-accent/30 text-accent">Python</Badge>
-              <Badge variant="outline" className="border-accent/30 text-accent">MongoDB</Badge>
+        <div className="mb-32">
+          <div className="flex items-center gap-6 mb-16">
+            <div className="h-2 w-16 bg-skill-gradient rounded-full shadow-glow"></div>
+            <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Python Ecosystem</h3>
+            <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
+            <div className="flex gap-3 text-sm">
+              <Badge variant="outline" className="border-accent/40 text-accent bg-accent/5 px-3 py-1">Django</Badge>
+              <Badge variant="outline" className="border-accent/40 text-accent bg-accent/5 px-3 py-1">Python</Badge>
+              <Badge variant="outline" className="border-accent/40 text-accent bg-accent/5 px-3 py-1">MongoDB</Badge>
             </div>
           </div>
           
@@ -169,7 +175,7 @@ const Projects = () => {
             {projects.filter(p => p.technologies.includes("Python")).map((project, index) => (
               <Card 
                 key={index} 
-                className="group relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg hover:from-card/90 hover:to-card/60 transition-all duration-700 hover:scale-[1.01] border border-accent/20 overflow-hidden shadow-2xl hover:shadow-accent/10"
+                className="group relative bg-card-gradient backdrop-blur-2xl hover:shadow-elegant transition-all duration-700 hover:scale-[1.02] border border-accent/30 hover:border-accent/50 overflow-hidden shadow-card"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
@@ -234,14 +240,14 @@ const Projects = () => {
         </div>
 
         {/* Desktop Applications */}
-        <div className="mb-16">
-          <div className="flex items-center gap-4 mb-10">
-            <div className="h-1 w-12 bg-gradient-to-r from-muted-foreground to-foreground rounded-full"></div>
-            <h3 className="text-3xl font-bold text-foreground">Desktop Applications</h3>
-            <div className="flex-1 h-px bg-border"></div>
-            <div className="flex gap-2 text-sm text-muted-foreground">
-              <Badge variant="outline" className="border-muted-foreground/30">C#</Badge>
-              <Badge variant="outline" className="border-muted-foreground/30">WPF</Badge>
+        <div className="mb-20">
+          <div className="flex items-center gap-6 mb-16">
+            <div className="h-2 w-16 bg-gradient-to-r from-muted-foreground to-foreground rounded-full shadow-glow"></div>
+            <h3 className="text-4xl lg:text-5xl font-bold text-foreground">Desktop Solutions</h3>
+            <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
+            <div className="flex gap-3 text-sm">
+              <Badge variant="outline" className="border-muted-foreground/40 bg-muted/5 px-3 py-1">C#</Badge>
+              <Badge variant="outline" className="border-muted-foreground/40 bg-muted/5 px-3 py-1">WPF</Badge>
             </div>
           </div>
           
@@ -249,7 +255,7 @@ const Projects = () => {
             {projects.filter(p => p.technologies.includes("Windows Forms/WPF")).map((project, index) => (
               <Card 
                 key={index} 
-                className="group bg-gradient-to-br from-card/60 to-card/30 hover:from-card/70 hover:to-card/40 transition-all duration-500 hover:scale-105 border border-border/50 hover:border-foreground/20 shadow-lg hover:shadow-xl"
+                className="group bg-card-gradient backdrop-blur-xl hover:shadow-elegant transition-all duration-500 hover:scale-110 border border-border/30 hover:border-foreground/30 shadow-card"
               >
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start mb-2">

@@ -69,9 +69,16 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'hero-gradient': 'linear-gradient(135deg, hsl(var(--hero-gradient-start)), hsl(var(--hero-gradient-end)))',
+				'hero-gradient': 'linear-gradient(135deg, hsl(var(--hero-gradient-start)), hsl(var(--hero-gradient-end)), hsl(var(--hero-gradient-accent)))',
 				'skill-gradient': 'linear-gradient(135deg, hsl(var(--skill-gradient-start)), hsl(var(--skill-gradient-end)))',
-				'text-gradient': 'linear-gradient(135deg, hsl(var(--text-gradient-start)), hsl(var(--text-gradient-end)))',
+				'text-gradient': 'linear-gradient(135deg, hsl(var(--text-gradient-start)), hsl(var(--text-gradient-end)), hsl(var(--text-gradient-accent)))',
+				'card-gradient': 'linear-gradient(135deg, hsl(var(--card-gradient-start)), hsl(var(--card-gradient-end)))',
+				'mesh-gradient': 'radial-gradient(circle at 20% 50%, hsl(var(--primary) / 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, hsl(var(--accent) / 0.1) 0%, transparent 50%), radial-gradient(circle at 40% 80%, hsl(var(--hero-gradient-accent) / 0.1) 0%, transparent 50%)',
+			},
+			boxShadow: {
+				'elegant': 'var(--shadow-elegant)',
+				'glow': 'var(--shadow-glow)',
+				'card': 'var(--shadow-card)',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -111,6 +118,28 @@ export default {
 						opacity: '1',
 						transform: 'translateY(0px)',
 					},
+				},
+				'fade-in': {
+					'0%': { 
+						opacity: '0',
+						transform: 'translateY(20px) scale(0.95)',
+					},
+					'100%': { 
+						opacity: '1',
+						transform: 'translateY(0px) scale(1)',
+					},
+				},
+				'shimmer': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' },
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 30px hsl(var(--primary) / 0.3)',
+					},
+					'50%': { 
+						boxShadow: '0 0 60px hsl(var(--primary) / 0.6), 0 0 90px hsl(var(--accent) / 0.4)',
+					},
 				}
 			},
 			animation: {
@@ -119,6 +148,9 @@ export default {
 				'float': 'float 3s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite alternate',
 				'slide-up': 'slide-up 0.6s ease-out',
+				'fade-in': 'fade-in 0.8s ease-out',
+				'shimmer': 'shimmer 2s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
 			}
 		}
 	},
