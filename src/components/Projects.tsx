@@ -52,8 +52,8 @@ const Projects = () => {
       type: "Testing Platform"
     },
     {
-      title: "UHA – Healthcare Website",
-      description: "Developed a HIPAA-conscious healthcare website for Urologic Health Associates. Designed for patient engagement, appointment bookings, and service details.",
+      title: "Urological Health Associates – Medical Clinic Website",
+      description: "Developed a comprehensive medical website for doctors running a Urological Health Associates clinic. Features patient portal, appointment scheduling, medical services information, and secure patient communication systems.",
       technologies: ["Healthcare", "Web Design", "Accessibility", "Responsive Design", "HIPAA"],
       liveUrl: "https://uhaaz.com",
       githubUrl: "#",
