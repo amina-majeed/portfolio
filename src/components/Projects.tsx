@@ -58,17 +58,17 @@ const Projects = () => {
       liveUrl: "https://uhaaz.com",
       githubUrl: "#",
       featured: false,
-      role: "Full Stack Developer",
+      role: "Frontend Developer",
       type: "Healthcare"
     },
     {
       title: "Align Environmental Solutions",
-      description: "Built an informational site for an environmental consultancy, including services, case studies, and contact forms. Focused on clean layout and fast load time.",
-      technologies: ["Business Website", "SEO Optimization", "Case Study Design", "Contact Forms"],
+      description: "Built a comprehensive environmental consultancy website with a powerful admin panel that allows complete content customization. Users can create new sections, modify text colors, and control every aspect of the website through the admin interface.",
+      technologies: ["Admin Panel", "Content Management", "Customizable UI", "SEO Optimization", "Case Studies"],
       liveUrl: "https://alignenv.com",
       githubUrl: "#",
       featured: false,
-      role: "Frontend Developer",
+      role: "Full Stack Developer",
       type: "Consultancy"
     },
     {
