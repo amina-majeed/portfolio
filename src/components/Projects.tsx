@@ -102,6 +102,16 @@ const Projects = () => {
       type: "Non-Profit"
     },
     {
+      title: "N5Store – Full WooCommerce Store",
+      description: "Full WooCommerce store (WordPress) with cart, reviews & mobile optimization. Complete e-commerce solution featuring product management, customer reviews system, responsive design, and optimized mobile shopping experience.",
+      technologies: ["WooCommerce", "WordPress", "E-commerce", "Mobile Optimization", "Cart System", "Reviews"],
+      liveUrl: "https://n5store.com",
+      githubUrl: "#",
+      featured: false,
+      role: "Full Stack Developer",
+      type: "E-commerce"
+    },
+    {
       title: "E1T1 Creative Coaching App",
       description: "Built a full-featured Flutter mobile app for E1T1 — a coaching and referral-based platform combining MLM compensation, fan engagement, and music submission rewards. The app includes multi-tiered progression, real-time commission tracking, coaching session scheduling, and fan conversion bonuses. Integrated Firebase backend and custom compensation logic.",
       image: "/lovable-uploads/bc42ac15-55bc-4d62-8512-98153dddae0f.png",
