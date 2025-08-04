@@ -121,6 +121,36 @@ const Projects = () => {
       featured: true,
       role: "Mobile App Developer",
       type: "Mobile Application"
+    },
+    {
+      title: "Inventory Management System",
+      description: "Comprehensive desktop application for inventory tracking, stock management, and supply chain optimization. Features real-time inventory updates, barcode scanning, automated reorder points, and detailed reporting with multi-location support.",
+      technologies: [".NET Framework", "WinForms", "C#", "SQL Server", "Crystal Reports", "Barcode Integration"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      role: "Desktop Developer",
+      type: "Desktop Application"
+    },
+    {
+      title: "School Management System",
+      description: "Complete educational institution management solution handling student records, attendance tracking, grade management, fee collection, and parent-teacher communication. Includes automated report generation and academic calendar management.",
+      technologies: [".NET Framework", "WinForms", "C#", "SQL Server", "Report Generation", "Data Management"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      role: "Desktop Developer",
+      type: "Desktop Application"
+    },
+    {
+      title: "ERP Management System",
+      description: "Enterprise resource planning desktop application integrating accounting, human resources, procurement, and project management modules. Features role-based access control, workflow automation, and comprehensive business intelligence dashboards.",
+      technologies: [".NET Framework", "WinForms", "C#", "SQL Server", "Business Intelligence", "Workflow Automation"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      role: "Desktop Developer",
+      type: "Desktop Application"
     }
   ];
 
@@ -372,6 +402,66 @@ const Projects = () => {
                     </CardContent>
                   </div>
                 </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop Applications */}
+        <div className="mb-20">
+          <div className="flex items-center gap-6 mb-16">
+            <div className="h-2 w-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full shadow-glow"></div>
+            <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">Desktop Applications</h3>
+            <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
+            <div className="flex gap-3 text-sm">
+              <Badge variant="outline" className="border-blue-500/40 text-blue-500 bg-blue-500/5 px-3 py-1">WinForms</Badge>
+              <Badge variant="outline" className="border-blue-500/40 text-blue-500 bg-blue-500/5 px-3 py-1">.NET Framework</Badge>
+              <Badge variant="outline" className="border-blue-500/40 text-blue-500 bg-blue-500/5 px-3 py-1">SQL Server</Badge>
+            </div>
+          </div>
+          
+          <div className="grid lg:grid-cols-3 gap-8">
+            {projects.filter(p => p.type === "Desktop Application").map((project, index) => (
+              <Card 
+                key={index} 
+                className="group relative bg-card-gradient backdrop-blur-2xl hover:shadow-elegant transition-all duration-700 hover:scale-[1.03] border border-blue-500/30 hover:border-blue-500/50 overflow-hidden shadow-card"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <CardHeader className="relative z-10">
+                  <div className="flex justify-between items-start mb-3">
+                    <CardTitle className="text-xl font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+                      {project.title}
+                    </CardTitle>
+                    <Badge variant="secondary" className="bg-blue-500/20 text-blue-500 border-blue-500/30 backdrop-blur-sm text-xs">
+                      {project.type}
+                    </Badge>
+                  </div>
+                  {project.role && (
+                    <Badge variant="outline" className="text-xs border-cyan-500/50 text-cyan-500 w-fit">
+                      {project.role}
+                    </Badge>
+                  )}
+                </CardHeader>
+                
+                <CardContent className="relative z-10">
+                  <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {project.technologies.map((tech, techIndex) => (
+                      <Badge key={techIndex} variant="secondary" className="text-xs bg-muted/50 hover:bg-blue-500/20 transition-colors">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex gap-3">
+                    <Button size="sm" className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View Details
+                    </Button>
+                  </div>
+                </CardContent>
               </Card>
             ))}
           </div>
