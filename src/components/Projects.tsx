@@ -155,43 +155,44 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-32 px-4 bg-gradient-to-b from-background via-background/95 to-muted/10 relative overflow-hidden">
-      {/* Background effects */}
+    <section id="projects" className="py-40 px-6 bg-gradient-to-b from-background/50 via-background to-background/90 relative overflow-hidden">
+      {/* Professional background effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-40 right-20 w-96 h-96 bg-accent/5 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-80 h-80 bg-primary/5 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-32 right-20 w-[40rem] h-[40rem] bg-accent/8 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-32 left-20 w-[36rem] h-[36rem] bg-primary/8 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] bg-[hsl(190_95%_65%)]/5 rounded-full filter blur-3xl"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-24">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">
-            Elite <span className="bg-text-gradient bg-clip-text text-transparent">Portfolio</span>
+      <div className="max-w-8xl mx-auto relative z-10">
+        <div className="text-center mb-32">
+          <h2 className="text-6xl md:text-7xl lg:text-8xl font-black mb-12 tracking-tighter">
+            Elite <span className="text-gradient bg-clip-text text-transparent">Portfolio</span>
           </h2>
-          <p className="text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Showcasing sophisticated solutions across enterprise-grade systems, from healthcare platforms to energy management infrastructure.
+          <p className="text-xl md:text-2xl lg:text-3xl text-elegant max-w-5xl mx-auto">
+            Crafting <span className="text-primary font-semibold">enterprise-grade systems</span> across healthcare, energy, and e-commerce — from <span className="text-accent font-semibold">HIPAA-compliant platforms</span> to <span className="text-[hsl(190_95%_65%)] font-semibold">real-time data infrastructure</span>
           </p>
         </div>
 
         {/* .NET Stack Projects */}
-        <div className="mb-32">
-          <div className="flex items-center gap-6 mb-16">
-            <div className="h-2 w-16 bg-hero-gradient rounded-full shadow-glow"></div>
-            <h3 className="text-4xl lg:text-5xl font-bold bg-text-gradient bg-clip-text text-transparent">.NET Ecosystem</h3>
-            <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
-            <div className="flex gap-3 text-sm">
-              <Badge variant="outline" className="border-primary/40 text-primary bg-primary/5 px-3 py-1">ASP.NET Core</Badge>
-              <Badge variant="outline" className="border-primary/40 text-primary bg-primary/5 px-3 py-1">C#</Badge>
-              <Badge variant="outline" className="border-primary/40 text-primary bg-primary/5 px-3 py-1">MS SQL</Badge>
+        <div className="mb-40">
+          <div className="flex items-center gap-8 mb-20">
+            <div className="h-3 w-20 bg-gradient-primary rounded-full shadow-2xl"></div>
+            <h3 className="text-5xl lg:text-6xl font-black text-gradient bg-clip-text text-transparent">.NET Ecosystem</h3>
+            <div className="flex-1 h-px bg-gradient-to-r from-border via-border/50 to-transparent"></div>
+            <div className="flex gap-4 text-sm">
+              <Badge variant="outline" className="border-primary/50 text-primary bg-primary/10 px-4 py-2 font-medium">ASP.NET Core</Badge>
+              <Badge variant="outline" className="border-primary/50 text-primary bg-primary/10 px-4 py-2 font-medium">C#</Badge>
+              <Badge variant="outline" className="border-primary/50 text-primary bg-primary/10 px-4 py-2 font-medium">MS SQL</Badge>
             </div>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-10">
             {projects.filter(p => p.technologies.includes("ASP.NET Core") || (!p.technologies.includes("Python") && !p.technologies.includes("Flutter"))).map((project, index) => (
               <Card 
                 key={index} 
-                className="group relative bg-card-gradient backdrop-blur-2xl hover:shadow-elegant transition-all duration-700 hover:scale-[1.03] border border-primary/30 hover:border-primary/50 overflow-hidden shadow-card"
+                className="group relative card-elegant hover:card-elevated transition-all duration-700 hover:scale-[1.02] border border-primary/40 hover:border-primary/60 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/8 to-accent/8 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 {project.image && (
                   <div className="relative overflow-hidden">
@@ -209,42 +210,42 @@ const Projects = () => {
                   </div>
                 )}
                 
-                <CardHeader className="relative z-10">
-                  <div className="flex justify-between items-start mb-3">
-                    <CardTitle className="text-2xl font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+                <CardHeader className="relative z-10 p-8">
+                  <div className="flex justify-between items-start mb-4">
+                    <CardTitle className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-foreground to-foreground/90 bg-clip-text">
                       {project.title}
                     </CardTitle>
                     {project.role && (
-                      <Badge variant="outline" className="text-xs whitespace-nowrap border-accent/50 text-accent">
+                      <Badge variant="outline" className="text-sm whitespace-nowrap border-accent/60 text-accent bg-accent/10 px-3 py-1">
                         {project.role}
                       </Badge>
                     )}
                   </div>
                 </CardHeader>
                 
-                <CardContent className="relative z-10">
-                  <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
+                <CardContent className="relative z-10 p-8 pt-0">
+                  <p className="text-elegant mb-8 text-base leading-relaxed">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-8">
+                  <div className="flex flex-wrap gap-3 mb-10">
                     {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="secondary" className="text-xs bg-muted/50 hover:bg-primary/20 transition-colors">
+                      <Badge key={techIndex} variant="secondary" className="text-sm bg-muted/60 hover:bg-primary/20 transition-colors px-3 py-1 font-medium">
                         {tech}
                       </Badge>
                     ))}
                   </div>
-                  <div className="flex gap-3">
+                  <div className="flex gap-4">
                     {project.liveUrl && project.liveUrl !== "#" ? (
-                      <Button size="sm" asChild className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-medium">
+                      <Button size="lg" asChild className="btn-primary font-semibold px-6 py-3 rounded-xl">
                         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Live Demo
+                          <ExternalLink className="mr-2 h-5 w-5" />
+                          View Project
                         </a>
                       </Button>
                     ) : (
-                      <Button size="sm" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-medium">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
+                      <Button size="lg" className="btn-primary font-semibold px-6 py-3 rounded-xl">
+                        <ExternalLink className="mr-2 h-5 w-5" />
+                        View Project
                       </Button>
                     )}
                   </div>
