@@ -30,7 +30,7 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            My <span className="bg-text-gradient bg-clip-text text-transparent">Skills</span>
+            My <span className="text-primary">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A comprehensive toolkit of modern technologies and frameworks I use to build 

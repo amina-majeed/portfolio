@@ -166,7 +166,7 @@ const Projects = () => {
       <div className="max-w-8xl mx-auto relative z-10">
         <div className="text-center mb-32">
           <h2 className="text-6xl md:text-7xl lg:text-8xl font-black mb-12 tracking-tighter">
-            Elite <span className="text-gradient bg-clip-text text-transparent">Portfolio</span>
+            Elite <span className="text-primary">Portfolio</span>
           </h2>
           <p className="text-xl md:text-2xl lg:text-3xl text-elegant max-w-5xl mx-auto">
             Crafting <span className="text-primary font-semibold">enterprise-grade systems</span> across healthcare, energy, and e-commerce — from <span className="text-accent font-semibold">HIPAA-compliant platforms</span> to <span className="text-[hsl(190_95%_65%)] font-semibold">real-time data infrastructure</span>
@@ -177,7 +177,7 @@ const Projects = () => {
         <div className="mb-40">
           <div className="flex items-center gap-8 mb-20">
             <div className="h-3 w-20 bg-gradient-primary rounded-full shadow-2xl"></div>
-            <h3 className="text-5xl lg:text-6xl font-black text-gradient bg-clip-text text-transparent">.NET Ecosystem</h3>
+            <h3 className="text-5xl lg:text-6xl font-black text-primary">.NET Ecosystem</h3>
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border/50 to-transparent"></div>
             <div className="flex gap-4 text-sm">
               <Badge variant="outline" className="border-primary/50 text-primary bg-primary/10 px-4 py-2 font-medium">ASP.NET Core</Badge>
@@ -259,7 +259,7 @@ const Projects = () => {
         <div className="mb-32">
           <div className="flex items-center gap-6 mb-16">
             <div className="h-2 w-16 bg-skill-gradient rounded-full shadow-glow"></div>
-            <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Python Ecosystem</h3>
+            <h3 className="text-4xl lg:text-5xl font-bold text-accent">Python Ecosystem</h3>
             <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
             <div className="flex gap-3 text-sm">
               <Badge variant="outline" className="border-accent/40 text-accent bg-accent/5 px-3 py-1">Django</Badge>
@@ -336,7 +336,7 @@ const Projects = () => {
         <div className="mb-20">
           <div className="flex items-center gap-6 mb-16">
             <div className="h-2 w-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-glow"></div>
-            <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Mobile Solutions</h3>
+            <h3 className="text-4xl lg:text-5xl font-bold text-purple-500">Mobile Solutions</h3>
             <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
             <div className="flex gap-3 text-sm">
               <Badge variant="outline" className="border-purple-500/40 text-purple-500 bg-purple-500/5 px-3 py-1">Flutter</Badge>
@@ -412,7 +412,7 @@ const Projects = () => {
         <div className="mb-20">
           <div className="flex items-center gap-6 mb-16">
             <div className="h-2 w-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full shadow-glow"></div>
-            <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">Desktop Applications</h3>
+            <h3 className="text-4xl lg:text-5xl font-bold text-blue-500">Desktop Applications</h3>
             <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent"></div>
             <div className="flex gap-3 text-sm">
               <Badge variant="outline" className="border-blue-500/40 text-blue-500 bg-blue-500/5 px-3 py-1">WinForms</Badge>

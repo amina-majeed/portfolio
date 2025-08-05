@@ -36,7 +36,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-24">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">
-            About <span className="text-gradient bg-clip-text text-transparent">Me</span>
+            About <span className="text-primary">Me</span>
           </h2>
           <p className="text-xl md:text-2xl text-elegant max-w-4xl mx-auto">
             <span className="text-primary font-semibold">Passionate Software Architect</span> crafting enterprise-grade solutions with <span className="text-accent font-semibold">precision</span> and <span className="text-[hsl(190_95%_65%)] font-semibold">innovation</span>
@@ -46,7 +46,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-8 text-gradient bg-clip-text text-transparent">
+              <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
                 My Professional Journey
               </h3>
               <div className="space-y-6">
@@ -81,17 +81,17 @@ const About = () => {
         {/* Professional stats or achievements section */}
         <div className="grid md:grid-cols-3 gap-8 text-center">
           <div className="card-elegant p-8 group hover:card-elevated transition-all duration-500">
-            <div className="text-4xl font-bold text-gradient bg-clip-text text-transparent mb-2">5+</div>
+            <div className="text-4xl font-bold text-primary mb-2">5+</div>
             <div className="text-lg font-semibold mb-2">Years Experience</div>
             <div className="text-sm text-muted-foreground">Enterprise Development</div>
           </div>
           <div className="card-elegant p-8 group hover:card-elevated transition-all duration-500">
-            <div className="text-4xl font-bold text-gradient bg-clip-text text-transparent mb-2">20+</div>
+            <div className="text-4xl font-bold text-accent mb-2">20+</div>
             <div className="text-lg font-semibold mb-2">Projects Delivered</div>
             <div className="text-sm text-muted-foreground">Production Applications</div>
           </div>
           <div className="card-elegant p-8 group hover:card-elevated transition-all duration-500">
-            <div className="text-4xl font-bold text-gradient bg-clip-text text-transparent mb-2">10+</div>
+            <div className="text-4xl font-bold text-primary mb-2">10+</div>
             <div className="text-lg font-semibold mb-2">Technologies</div>
             <div className="text-sm text-muted-foreground">Mastered Stacks</div>
           </div>
