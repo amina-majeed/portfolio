@@ -7,54 +7,54 @@
 
 @layer base {
   :root {
-    /* Enhanced professional color palette */
-    --background: 220 20% 3%;
-    --foreground: 220 15% 98%;
+    /* Modern professional color palette */
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
 
-    --card: 220 18% 5%;
-    --card-foreground: 220 15% 98%;
+    --card: 222 84% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 220 18% 5%;
-    --popover-foreground: 220 15% 98%;
+    --popover: 222 84% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    /* Primary - Professional blue with perfect contrast */
-    --primary: 212 95% 62%;
-    --primary-foreground: 220 20% 3%;
+    /* Primary - Vibrant cyan */
+    --primary: 199 89% 48%;
+    --primary-foreground: 222 84% 5%;
 
-    /* Secondary - Refined charcoal */
-    --secondary: 220 15% 8%;
-    --secondary-foreground: 220 15% 98%;
+    /* Secondary - Deep slate */
+    --secondary: 222 47% 11%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 15% 6%;
-    --muted-foreground: 220 12% 75%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 217 11% 65%;
 
-    /* Accent - Premium purple with sophistication */
-    --accent: 256 85% 68%;
-    --accent-foreground: 220 20% 3%;
+    /* Accent - Electric purple */
+    --accent: 271 91% 65%;
+    --accent-foreground: 222 84% 5%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 220 15% 98%;
 
-    --border: 220 15% 10%;
-    --input: 220 15% 6%;
-    --ring: 212 95% 62%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 199 89% 48%;
 
-    /* Professional gradient system */
-    --gradient-primary: linear-gradient(135deg, hsl(212 95% 62%), hsl(256 85% 68%));
-    --gradient-secondary: linear-gradient(135deg, hsl(220 18% 5%), hsl(220 15% 8%));
-    --gradient-accent: linear-gradient(135deg, hsl(256 85% 68%), hsl(280 90% 70%));
-    --gradient-text: linear-gradient(135deg, hsl(212 95% 62%), hsl(256 85% 68%), hsl(190 95% 65%));
+    /* Modern gradient system */
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%), hsl(271 91% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(222 84% 8%), hsl(215 28% 17%));
+    --gradient-accent: linear-gradient(135deg, hsl(271 91% 65%), hsl(310 95% 70%));
+    --gradient-text: linear-gradient(135deg, hsl(199 89% 48%), hsl(271 91% 65%), hsl(140 100% 55%));
     
-    /* Sophisticated backgrounds */
-    --bg-mesh: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(212 95% 62% / 0.15), transparent),
-               radial-gradient(ellipse 80% 80% at 80% 60%, hsl(256 85% 68% / 0.12), transparent),
-               radial-gradient(ellipse 60% 50% at 20% 80%, hsl(190 95% 65% / 0.1), transparent);
+    /* Dynamic backgrounds */
+    --bg-mesh: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(199 89% 48% / 0.2), transparent),
+               radial-gradient(ellipse 80% 80% at 80% 60%, hsl(271 91% 65% / 0.15), transparent),
+               radial-gradient(ellipse 60% 50% at 20% 80%, hsl(140 100% 55% / 0.1), transparent);
     
-    /* Professional shadows */
-    --shadow-elegant: 0 20px 40px -12px hsl(212 95% 62% / 0.25);
-    --shadow-soft: 0 8px 32px -8px hsl(220 20% 3% / 0.6);
-    --shadow-glow: 0 0 80px hsl(212 95% 62% / 0.2);
-    --shadow-card: 0 8px 32px -8px hsl(220 20% 3% / 0.3), 0 0 0 1px hsl(220 15% 10%);
+    /* Enhanced shadows */
+    --shadow-elegant: 0 20px 40px -12px hsl(199 89% 48% / 0.3);
+    --shadow-soft: 0 8px 32px -8px hsl(222 84% 5% / 0.8);
+    --shadow-glow: 0 0 80px hsl(199 89% 48% / 0.25);
+    --shadow-card: 0 8px 32px -8px hsl(222 84% 5% / 0.4), 0 0 0 1px hsl(215 28% 17%);
     
     /* Enhanced transitions */
     --transition-elegant: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
