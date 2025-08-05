@@ -49,15 +49,15 @@ const Hero = () => {
         <div className="animate-fade-up">
           {/* Premium heading with sophisticated gradient */}
           <h1 className="text-6xl md:text-8xl lg:text-[7rem] xl:text-[8rem] font-black mb-12 tracking-tighter leading-none">
-            <span className="text-gradient bg-clip-text text-transparent drop-shadow-xl">
+            <span className="text-foreground drop-shadow-xl">
               Amna Majeed
             </span>
           </h1>
           
           {/* Professional typewriter effect */}
-          <div className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-medium mb-12 text-muted-foreground">
+          <div className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-medium mb-12">
             <div className="inline-block relative">
-              <span className="text-gradient bg-clip-text text-transparent font-semibold">
+              <span className="text-primary font-semibold">
                 {text}
               </span>
               <span className="animate-pulse text-primary ml-2 text-3xl md:text-5xl">|</span>
